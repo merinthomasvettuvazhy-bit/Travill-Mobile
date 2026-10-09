@@ -14,8 +14,3 @@
 - `sw.js` — service worker with a refreshed cache version
 - `manifest.json`, `icons/icon.svg` — installable web app metadata/icon
 
-## Important notes
-- The bus module calls the staging BMTC API at `https://bmtcmobileapistaging.amnex.com/WebAPI`. It is an unofficial integration and may stop working or change without notice.
-- The browser may block direct requests due to CORS or the API may reject request fields. If that happens, the button should still open the route prompt; the console and in-app message will show the request error. A small server-side proxy may be required for CORS.
-- Live vehicle markers appear only if the API response includes vehicle data; route/stops availability is controlled by the upstream API.
-- Do not put private API keys or credentials in frontend JavaScript.
